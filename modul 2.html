@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 2 - HTML dan Bootstrap</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        /* NAVBAR GRADIENT */
+        .navbar-custom {
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+        }
+
+        /* FOOTER GRADIENT */
+        .footer-custom {
+            background: linear-gradient(45deg, #2575fc, #6a11cb);
+        }
+
+        /* TEXT PUTIH */
+        .navbar-custom .navbar-brand,
+        .footer-custom p {
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#"><strong>Modul 2</strong></a>
+</nav>
+
+<!-- CONTAINER -->
+<div class="container mt-4">
+
+    <h2 class="mb-4">Form Registrasi</h2>
+
+    <form action="#" method="GET">
+
+        <div class="form-group">
+            <label for="name">Nama :</label>
+            <input type="text" class="form-control" placeholder="Name" name="nama" id="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password :</label>
+            <input type="password" class="form-control" placeholder="Password" name="password" id="password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="jk">Jenis Kelamin:</label>
+            <select class="form-control" id="jk" name="jk">
+                <option>Pria</option>
+                <option>Wanita</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-custom text-white text-center py-3 mt-5">
+    <p class="mb-0">
+        Nama: <strong>Kezia Floresita Ngama</strong> |
+        NIM: <strong>230211060084</strong>
+    </p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
